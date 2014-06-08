@@ -105,6 +105,7 @@ class CRM
 
 	def select_contact_to_delete
 		puts "Which contact would you like to delete?"
+		@rolodex.display_all_contacts
 		contact_selection = gets.chomp.to_i
 		@rolodex.delete_a_contact(contact_selection)
 		main_menu
